@@ -140,6 +140,10 @@ namespace NebulaWorld
             // Finally we need add the local player components to the player character
             localPlayerMovement = GameMain.mainPlayer.gameObject.AddComponentIfMissing<LocalPlayerMovement>();
             localPlayerAnimation = GameMain.mainPlayer.gameObject.AddComponentIfMissing<LocalPlayerAnimation>();
+
+            // Add pinging system 
+
+            GameMain.mainPlayer.gameObject.AddComponentIfMissing<Pinging>();
         }
 
         public void OnPlayerJoining()
